@@ -1,0 +1,487 @@
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("../images/PKBBarton/61d1828d562a3adb48e594b686f7d6df.jpg") no-repeat
+      center center / cover;
+  background-size: cover;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    100% 87%,
+    50% 100%,
+    0 87%,
+    0% 75%
+  );
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+  .header {
+    height: 450px;
+  }
+}
+
+/* End Header */
+
+/* Start About Us */
+
+#about {
+  margin-top: 130px;
+}
+
+.carousel-inner {
+  display: block;
+  width: 100%;
+  height: 420px;
+  white-space: nowrap;
+  position: inherit;
+  z-index: -1;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+.carousel-item img {
+  background-size: cover;
+  background-position: no-repeat center center;
+  width: 400px;
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 25px;
+  display: block;
+  position: relative;
+}
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+  .carousel-item img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .carousel-item img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* End About Us */
+
+/* Start Story */
+
+#story {
+  margin-top: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../images/Food/292190735_2081842302008575_7231095398308630860_n.jpg")
+      no-repeat center center / cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#story:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+/* End Story */
+
+/* Start Store */
+
+#book {
+  margin-top: 80px;
+}
+
+.book-cont {
+  padding: 30px 0;
+}
+
+.img {
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.img-store {
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+  .img {
+    width: 300px;
+    height: 200px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .img-store {
+    width: 300px;
+    height: 150px;
+    margin-top: 15px;
+  }
+}
+
+/* End Store */
+
+/* Start Cards Food*/
+
+.cards-food {
+  margin-top: 140px;
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+.cards {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.cards:before,
+.cards:after {
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.cards:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.cards:before {
+  left: 0;
+  top: 0;
+}
+
+.cards-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(300px * 11);
+}
+
+.card {
+  margin-left: 10px;
+}
+
+.card img {
+  height: 150px;
+  width: 240px;
+  align-items: center;
+  text-align: center;
+}
+
+.menu {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-top: 7px;
+  color: #fff;
+}
+
+/* End Cards Food */
+
+/* Banner */
+
+#banner {
+  margin-top: 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("../images/Logo/pkb_logo.jpg") no-repeat center center / cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+}
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+  #banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("../images/Logo/pkb_logo.jpg") no-repeat center center / cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  #banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("../images/Logo/pkb_logo.jpg") no-repeat center center / cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
+  #banner {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+      url("../images/Logo/pkb_logo.jpg") no-repeat center center / cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+  }
+}
+
+/* End Banner */
+
+/* Start Events */
+
+#events {
+  margin-top: 80px;
+}
+
+.blog-date {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border-radius: 60px;
+  background: #000;
+}
+
+/* End Events */
+
+/* Start Christmas */
+
+#christmas {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../images/PKBAngel/310957918_2152841544908650_8868911482921146285_n.jpg")
+      no-repeat center center / cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#story:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+/* End Christmas*/
+
+/* Video */
+
+#video {
+  margin-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0, 50% 30%);
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* End Video */
+
+/* Start Follow Us */
+
+#follow-us {
+  margin-bottom: 50px;
+}
+
+.container-1 {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.carousel-1 {
+  display: block;
+  width: 100%;
+  height: 380px;
+  padding-top: 20px;
+  white-space: nowrap;
+  position: inherit;
+  z-index: -1;
+}
+
+.owl-carousel {
+  margin: auto 0;
+}
+
+.item-client {
+  background-size: cover;
+  background-position: no-repeat center center;
+  width: 280px;
+  margin: 0 auto;
+  height: 250px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+}
+
+#client-1 {
+  background-image: url("../images/social//PKB-1.jpg");
+  background-size: cover;
+}
+
+#client-2 {
+  background-image: url("../images/social/PKB-2.jpg");
+  background-size: cover;
+}
+
+#client-3 {
+  background-image: url("../images/social/PKB-3.jpg");
+  background-size: cover;
+}
+
+#client-4 {
+  background-image: url("../images/social/PKB_4.jpg");
+  background-size: cover;
+}
+
+#client-5 {
+  background-image: url("../images/social/PKB-5.jpg");
+  background-size: cover;
+}
+
+#client-6 {
+  background-image: url("../images/social/PKB-6.jpg");
+  background-size: cover;
+}
+
+.container-logo {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  position: relative;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0 5px;
+  border: 2px solid #000 !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+  background-color: #000 !important;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.owl-prev {
+  left: 40px;
+}
+
+.owl-next {
+  right: 20px;
+}
+/* End Follow Us */
+
+/* Start Work with Us */
+
+#works {
+  margin-top: 20px;
+}
+
+.card-job {
+  margin: auto 0;
+  text-align: center;
+}
+
+.text-job {
+  margin: auto 0;
+  text-align: center;
+}
+
+/* End Work with Us */
